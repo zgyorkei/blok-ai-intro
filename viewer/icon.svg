@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>BLOK.AI</title>
+  <!-- Blueprint blue, in the rounded square the OS masks crop to. -->
+  <rect width="1024" height="1024" rx="224" fill="#1c4e9a"/>
+
+  <!-- Light blue: the rooms each letter stands in, and the ground. -->
+  <g fill="none" stroke="#9fd0ff" stroke-width="14" stroke-linecap="square">
+    <line x1="512" y1="450" x2="512" y2="880"/>
+    <line x1="257" y1="665" x2="767" y2="665"/>
+    <line x1="186" y1="880" x2="838" y2="880"/>
+  </g>
+
+  <!-- White: the walls, the letters and the roof. -->
+  <g fill="none" stroke="#ffffff" stroke-linecap="square" stroke-linejoin="miter">
+    <!-- the outer walls -->
+    <rect x="257" y="450" width="510" height="430" stroke-width="20"/>
+
+    <!-- ground floor: O and K -->
+    <ellipse cx="384.5" cy="772.5" rx="60" ry="68" stroke-width="34"/>
+    <path d="M592 704 V841 M598 776 L688 704 M624 758 L692 841" stroke-width="34"/>
+
+    <!-- first floor: B and L -->
+    <path d="M340 487 V626 M340 487 H398 C438 487 438 555 398 555 H340 M340 555 H406 C450 555 450 626 406 626 H340" stroke-width="32"/>
+    <path d="M598 487 V626 H690" stroke-width="34"/>
+
+    <!-- the roof: A, its crossbar the attic floor -->
+    <path d="M217 450 L512 190 L807 450" stroke-width="36"/>
+    <line x1="308" y1="370" x2="716" y2="370" stroke-width="30" stroke-linecap="butt"/>
+
+    <!-- the chimney: I, tight against the roof -->
+    <path d="M660 185 H720 M690 185 V277 M660 277 H720" stroke-width="30"/>
+  </g>
+
+  <!-- digital smoke -->
+  <g fill="#9fd0ff">
+    <rect x="700" y="132" width="24" height="24"/>
+    <rect x="732" y="106" width="20" height="20" opacity="0.85"/>
+    <rect x="758" y="86" width="16" height="16" opacity="0.7"/>
+  </g>
+</svg>
